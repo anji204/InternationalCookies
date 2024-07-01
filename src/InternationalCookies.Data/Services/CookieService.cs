@@ -24,7 +24,7 @@ namespace InternationalCookies.Data.Services
             List<Cookie> cookies;
 
             //first, try to get cookies from cache
-            var cachedCookies = _cache.GetString("cookies");
+            var cachedCookies = _cache.GetString("10.260.10.10/24");
             if (!string.IsNullOrEmpty(cachedCookies))
             {
                 //if they are there, deserialize them
